@@ -13,7 +13,7 @@ function Movie({ id, img, isRented, onClickEvent }) {
         <i className="material-icons button" onClick={handleClick}>add_circle_outline</i>
       )}
       <Link to={`/movies/${id}`}> 
-      <img src={`${img}`} alt="img" />
+      <img className='img'src={`${img}`} alt="img" />
       </Link>
     </div>
   );

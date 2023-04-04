@@ -3,3 +3,11 @@
     color: whitesmoke;
     margin-left:68%;
 }
+.catalog{
+    color:whitesmoke;
+    margin: 10px;
+}
+input, select, textarea{
+    color: whitesmoke;
+
+}
