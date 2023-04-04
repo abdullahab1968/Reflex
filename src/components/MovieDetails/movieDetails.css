@@ -1,0 +1,16 @@
+.movieDetails{
+    text-align: center;
+    color: whitesmoke;
+    
+}
+img{
+    height:600px;
+    width: 500px;
+}
+#description{
+
+    display: block;
+    font-size: 1.7em;
+    width: 50%;
+    margin-left: 25%;
+}
