@@ -1,18 +1,23 @@
 import { useState } from "react";
 import { MOVIES } from "./Constants";
-// import SearchBar from "./SearchBar";
 import Movie from "./Movie";
 import './catalog.css'
+const RENT_PRICE = 3
+const TOTAL_BUDGET =100
 function Catalog() {
   const [movies, setMovies] = useState(MOVIES);
-  const [budget, setBudget] = useState(100);
+  const [budget, setBudget] = useState(TOTAL_BUDGET);
   const [input, setInput] = useState('')
 
   const handleClick = (id) => {
     setMovies(movie =>
         movie.map(obj => {
           if (obj.id === id) {
-            obj.isRented ? setBudget(budget + 3) : setBudget(budget - 3)
+            if( !obj.isRented && budget - RENT_PRICE < 0){
+              alert('There are insufficient funds')
+              return {...obj}
+            }
+            obj.isRented ? setBudget(budget + RENT_PRICE) : setBudget(budget - RENT_PRICE)
             return {...obj, isRented: !obj.isRented};
           }
   
