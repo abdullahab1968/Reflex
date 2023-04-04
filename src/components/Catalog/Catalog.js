@@ -35,7 +35,7 @@ function Catalog() {
   return (
     <div className="catalog">
       <input placeholder="Search" value={input} onChange={updateInput} style={{width:"300px", display:'inline'}}></input>
-      <span className="budget">budget ${budget}.00</span>
+      <span className="budget">Budget: ${budget}.00</span>
       <h2>Catalog</h2>
       <div className="movies row">
         {findMovies(input).map((m) => (

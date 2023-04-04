@@ -1,11 +1,13 @@
 .img{
     height:400px;
     width: 300px;
+    border-radius: 15px;
 }
 
 .movie {
     position: relative;
     width: 50%;
+    margin-bottom:20px;
   }
   
   /* Make the image responsive */

@@ -7,9 +7,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="header">
-          <Link to="/" id="home"> Home </Link>
-          <Link to="/catalog"> Catalog </Link>
+        <header className="header row">
+          <Link to="/" className="col s1"> Home </Link>
+          <Link to="/catalog" > Catalog </Link>
           <span className="logo">REFLIX</span>
         </header>
         <Routes>
