@@ -1,5 +1,21 @@
 
-.Users{
-    display: inline-flex;
-
+.user{
+    position: relative;
+    font-size: 2em;
+    color: black;
+    height: 200px;
+    width:200px;
+    margin: 20px;
+    border-radius: 25px;
+}
+.Landing{
+    text-align: center;
+   
+}
+.users{
+    margin-left: 24%;
+}
+.username{
+    position: relative;
+    top:35%;
 }

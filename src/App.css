@@ -11,4 +11,14 @@
   z-index: -1;
   overflow: auto; /* add this */
 }
-
+.header{
+  font-size: 2em;
+  color: #03a9f4;
+  margin: 3%;
+}
+.logo{
+  margin-left:80%;
+}
+#home{
+  margin-right: 30px;
+}

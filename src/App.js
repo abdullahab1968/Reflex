@@ -7,9 +7,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header>
-          <Link to="/"> Home </Link>
+        <header className="header">
+          <Link to="/" id="home"> Home </Link>
           <Link to="/catalog"> Catalog </Link>
+          <span className="logo">REFLIX</span>
         </header>
         <Routes>
           <Route path="/" element={<Landing />} />
